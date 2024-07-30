@@ -1,0 +1,24 @@
+﻿@model IEnumerable<FamilyMedia.DTOs.NotificationDTO>
+
+@{
+    ViewBag.Title = "Notifications";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+
+<h2>Notifications</h2>
+
+<table class="table">
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NData) at 
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

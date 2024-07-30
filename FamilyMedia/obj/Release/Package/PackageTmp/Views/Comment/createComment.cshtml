@@ -1,0 +1,133 @@
+﻿@model FamilyMedia.DTOs.CommentDTO
+@*@model IEnumerable<FamilyMedia.DTOs.CommentDTO>*@
+@{
+    ViewBag.Title = "Create Comment";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+
+﻿@if (TempData["Msg"] != null)
+{
+    <span class="alert-danger">@TempData["Msg"]</span>
+}
+<section aria-labelledby="gettingStartedTitle">
+    <h4 id="gettingStartedTitle">
+        @{
+            string PostedBy = ViewBag.PostedBy;
+        }
+        @Html.ActionLink(PostedBy, "Index", "Profile", new { id = @ViewBag.PosterId }, new { @class = "link" })
+    </h4>
+    <h5 class="text-decoration-underline">@ViewBag.PostTitle: </h5>
+    <span>
+        @ViewBag.PostData
+    </span>
+    <br />
+    <b>Privacy: </b>
+    <span class="opacity-75">
+        @ViewBag.PostPrivacy
+    </span>
+    <br />
+    <b>Posted on: </b>
+    <span class="opacity-75">
+        @ViewBag.PostTime
+    </span>
+    <br />
+    @foreach (var temp in ViewBag.Likes)
+    {
+        if (temp.PostId == ViewBag.PostId)
+        {
+            if (ViewBag.LCount > 1)
+            {
+                <span>
+                    You and @{ViewBag.LCount -= 1;}
+                    @ViewBag.LCount other people liked this post
+                    @{ViewBag.LCount += 1;}
+                </span>
+            }
+            else
+            {
+                <span>You only liked this post</span>
+            }
+        }
+    }
+    <p>
+        <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+            @using (Html.BeginForm("Index", "Like", new { id = @ViewBag.PostId }, FormMethod.Post))
+            {
+                <input type="submit" value="Like(@ViewBag.LCount)" class="btn btn-primary" );" />
+            }
+        </div>
+    </p>
+</section>
+
+<h5>Comments: </h5>
+<table class="table">
+    @foreach (var item in ViewBag.ConvertedComments)
+    {
+        <tr>
+            <td>
+                <b>@item.UFlullName </b>
+                <span>@item.CommentData</span>
+                <span class="opacity-75"> @item.CommentTime</span>
+            </td>
+            @if (ViewBag.LoggedUserId == item.UId)
+            {
+                <td>
+                    <div class="d-inline-flex">
+                        @using (Html.BeginForm("EditComment", "Comment", new { id = item.Id }, FormMethod.Get))
+                        {
+                            <input type="submit" value="Edit" class="btn btn-link stretched-link" />
+                        }
+                        
+                        @using (Html.BeginForm("DeleteComment", "Comment", new { id = item.Id }, FormMethod.Post))
+                        {
+                            <input type="submit" value="Delete" class="btn btn-link link-danger" onclick="return confirm('Are you sure you want to delete this comment?');" />
+                        }
+                    </div>
+                </td>
+            }
+            else
+            {
+                if (ViewBag.DeleteAccess == "Ok")
+                {
+                    <td>
+                        <div class="inline-buttons">
+                            @using (Html.BeginForm("DeleteComment", "Comment", new { id = item.Id }, FormMethod.Post))
+                            {
+                                <input type="submit" value="Delete" class="btn btn-link link-danger" onclick="return confirm('Are you sure you want to delete this comment?');" />
+                            }
+                        </div>
+                    </td>
+                }
+            }
+        </tr>
+    }
+</table>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            Write your comment below:
+            <div class="col-md-10">
+                <input type="text" name="CommentData" class="form-control" /> <br>
+                <span class="text-danger">@Html.ValidationMessage("CommentData")</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Comment" class="btn btn-secondary" />
+            </div>
+        </div>
+    </div>
+}
+<br />
+<div>
+    @Html.ActionLink("Back to Home", "Index")
+</div>

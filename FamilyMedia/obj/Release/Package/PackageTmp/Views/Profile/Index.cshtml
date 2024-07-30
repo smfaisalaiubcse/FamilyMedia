@@ -1,0 +1,54 @@
+﻿@model FamilyMedia.DTOs.UserDTO
+
+@{
+    ViewBag.Title = "Profile";
+    if (Session["UserId"] == null)
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+    }
+}
+
+@{
+    if (Session["UserId"] != null)
+    {
+        using (Html.BeginForm("AddFriend", "Profile", new { id = Model.Id }, FormMethod.Post))
+        {
+            <input type="submit" value="Add Friend" class="btn btn-success" />
+        }
+    }
+}
+
+﻿@if (TempData["Msg"] != null)
+{
+    <div>
+        <span class="text-bg-info">@TempData["Msg"]</span>
+    </div>
+}
+
+<div>
+    <h3>Profile</h3>
+    <hr />
+    <div>
+        <span class="fw-bold">Full Name:</span> @Html.DisplayFor(model => model.FirstName)
+    </div>
+    <div>
+        <span class="fw-bold">Email:</span> @Html.DisplayFor(model => model.Email)
+    </div>
+    <div>
+        <span class="fw-bold">Gender:</span> @Html.DisplayFor(model => model.Gender)
+    </div>
+    <div>
+        <span class="fw-bold">Date Of Birth:</span> @Html.DisplayFor(model => model.DOB)
+    </div>
+    <div>
+        <span class="fw-bold">Number Of Friend:</span> @ViewBag.FriendsCount
+        @Html.ActionLink("(See all)", "ViewAllFriends")
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+</p>

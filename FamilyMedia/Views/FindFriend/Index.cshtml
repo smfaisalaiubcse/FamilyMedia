@@ -1,0 +1,133 @@
+﻿@model IEnumerable<FamilyMedia.DTOs.UserDTO>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+
+﻿@if (TempData["Msg"] != null)
+{
+    <div>
+        <span class="text-bg-info">@TempData["Msg"]</span>
+    </div>
+}
+
+<h2>Friend Request</h2>
+
+<table class="table">
+    @if(ViewBag.FriendRequestCount == 0)
+    {
+        <span>
+            No request
+        </span>
+    }
+    @foreach (var item in ViewBag.FriendRequest)
+    {
+        <tr>
+            <td>
+                <h4>@item.FirstName</h4>
+                <span class="opacity-75">student of</span>
+                @if (item.UniversityName != null)
+                {
+                    @item.UniversityName;
+                }
+                else if (item.CollegeName != null)
+                {
+                    @item.CollegeName;
+                }
+                else if (item.SchoolName != null)
+                {
+                    @item.SchoolName;
+                }
+                <br />
+            </td>
+            <td class="d-inline-flex">
+                @if (Session["UserId"] != null)
+                {
+                    using (Html.BeginForm("Accept", "FindFriend", new { id = item.Id }, FormMethod.Post))
+                    {
+                        <input type="submit" value="Accept" class="btn btn-success" />
+                    }
+                    <span> | </span>
+                    using (Html.BeginForm("Delete", "FindFriend", new { id = item.Id }, FormMethod.Post))
+                    {
+                        <input type="submit" value="Delete" class="btn btn-danger" />
+                    }
+                }
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>Add Friend</h2>
+
+<table class="table">
+    @foreach (var item in Model)
+    {
+        bool ok = true;
+        foreach (var temp in ViewBag.AlreadyFriendOrRequested)
+        {
+            if (temp.FId2 == item.Id || (temp.FId1 == item.Id))
+            {
+                ok = false;
+                continue;
+            }
+        }
+        if (!ok)
+        {
+            continue;
+        }
+        <tr>
+            <td>
+                <h4>@item.FirstName</h4>
+                <span class="opacity-75">student of</span>
+                @if (item.UniversityName != null)
+                {
+                    @Html.DisplayFor(modelItem => item.UniversityName)
+                }
+                else if (item.CollegeName != null)
+                {
+                    @Html.DisplayFor(modelItem => item.CollegeName)
+                }
+                else if (item.SchoolName != null)
+                {
+                    @Html.DisplayFor(modelItem => item.SchoolName)
+                }
+                <br />
+            </td>
+            <td>
+                @{
+                    bool SentOrFriend = false;
+                    foreach (var temp in ViewBag.AlreadyFriendOrRequested)
+                    {
+                        if (temp.FId2 == item.Id)
+                        {
+                            if (temp.State == "Requested")
+                            {
+                                <span>
+                                    Friend request already sent.
+                                </span>
+                            }
+                            else
+                            {
+                                <span>
+                                    Already you are friends.
+                                </span>
+                            }
+                            SentOrFriend = true;
+                        }
+                    }
+                    if (Session["UserId"] != null && !SentOrFriend)
+                    {
+                        using (Html.BeginForm("AddFriend", "Profile", new { id = item.Id }, FormMethod.Post))
+                        {
+                            <input type="submit" value="Add Friend" class="btn btn-primary" />
+                        }
+                    }
+                }
+
+            </td>
+        </tr>
+    }
+</table>
+

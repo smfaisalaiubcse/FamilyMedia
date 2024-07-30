@@ -1,0 +1,139 @@
+﻿@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - Family Media</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+            <div class="container">
+                @Html.ActionLink("Family Media", "Index", "User", new { area = "" }, new { @class = "navbar-brand" })
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li>@Html.ActionLink("Home", "Index", "User", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Find Friend(" + Session["FriendRequestCount"] + ")", "Index", "FindFriend", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Create-Post", "CreatePost", "Post", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("My-Posts", "MyPosts", "Post", new { area = "" }, new { @class = "nav-link" })</li>
+                        ﻿@if (@Session["NotificationCount"] != null)
+                        {
+                            if ((int)Session["NotificationCount"] > 0)
+                            {
+                                <li>@Html.ActionLink("Notification(" + Session["NotificationCount"] + ")", "Index", "Notification", new { area = "" }, new { @class = "nav-link" })</li>
+                            }
+                            else
+                            {
+                                <li>@Html.ActionLink("Notification", "Index", "Notification", new { area = "" }, new { @class = "nav-link" })</li>
+                            }
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink("Notification", "Index", "Notification", new { area = "" }, new { @class = "nav-link" })</li>
+                        }
+                        <li>@Html.ActionLink("Profile(" + Session["userFullName"] + ")", "Index", "Profile", new { id = (int)Session["UserId"] }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Chat", "Index", "Chat", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Logout", "Logout", "User", new { area = "" }, new { @class = "nav-link" })</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - A simple ASP.NET Application</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+    </html>*@
+
+
+@*new design*@
+@{
+    string currentAction = ViewContext.RouteData.Values["action"].ToString();
+    string currentController = ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Family Media</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    @Scripts.Render("~/bundles/modernizr")
+    @*@Styles.Render("~/Content/css")*@
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                @Html.ActionLink("Family Media", "Index", "User", new { area = "" }, new { @class = "logo" })
+                <ul class="navbar">
+                    <li class="@(currentController == "User" && currentAction == "Index" ? "active" : "")">
+                        @Html.ActionLink("Home", "Index", "User")
+                    </li>
+                    <li class="@(currentController == "FindFriend" && currentAction == "Index" ? "active" : "")">
+                        @Html.ActionLink("Find Friend(" + Session["FriendRequestCount"] + ")", "Index", "FindFriend", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="@(currentController == "Post" && currentAction == "CreatePost" ? "active" : "")">
+                        @Html.ActionLink("Create-Post", "CreatePost", "Post")
+                    </li>
+                    <li class="@(currentController == "Post" && currentAction == "MyPosts" ? "active" : "")">
+                        @Html.ActionLink("My-Posts", "MyPosts", "Post")
+                    </li>
+                    <li class="@(currentController == "Notification" && currentAction == "Index" ? "active" : "")">
+                        @*@Html.ActionLink("Notification", "Index", "Notification")*@
+                        @if (@Session["NotificationCount"] != null)
+                        {
+                            if ((int)Session["NotificationCount"] > 0)
+                            {
+                            @Html.ActionLink("Notification(" + Session["NotificationCount"] + ")", "Index", "Notification", new { area = "" }, new { @class = "nav-link" })
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Notification", "Index", "Notification", new { area = "" }, new { @class = "nav-link" })
+                        }
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Notification", "Index", "Notification", new { area = "" }, new { @class = "nav-link" })
+                    }
+                        </li>
+                        <li class="@(currentController == "Profile" && currentAction == "MyProfile" ? "active" : "")">
+                            @Html.ActionLink("Profile(" + Session["userFullName"] + ")", "MyProfile", "Profile", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="@(currentController == "Chat" && currentAction == "Index" ? "active" : "")">
+                            @Html.ActionLink("Chat", "Index", "Chat")
+                        </li>
+                        <li class="@(currentController == "User" && currentAction == "Logout" ? "active" : "")">
+                            @Html.ActionLink("Logout", "Logout", "User")
+                        </li>
+                    </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        @RenderBody()
+    </main>
+    <footer>
+        <p>&copy; @DateTime.Now.Year - A simple ASP.NET Application</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+

@@ -1,0 +1,318 @@
+﻿/* Set padding to keep content from hitting the edges */
+/*.body-content {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+/*.dl-horizontal dt {
+    white-space: normal;
+}*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+
+/*new design*/
+
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        color: white;
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    header .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+        header .navbar li {
+            margin: 0 10px;
+        }
+
+            header .navbar li a {
+                color: white;
+                text-decoration: none;
+                padding: 5px 10px;
+            }
+
+                header .navbar li a:hover {
+                    background-color: #575757;
+                    border-radius: 5px;
+                }
+
+.navbar li.active a {
+    background-color: #007bff; /* Background color for active link */
+    color: white; /* Text color for active link */
+    border-radius: 5px;
+}
+
+    .navbar li.active a:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+    }
+
+/* Main Content Styles */
+main.content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Heading Styles */
+h2, h4, h5 {
+    color: #333;
+    margin: 20px 0;
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+/* Notification and Messages */
+.text-bg-info {
+    display: block;
+    background-color: #d9edf7;
+    color: #31708f;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bce8f1;
+    border-radius: 5px;
+}
+
+/* Post and Comment Section */
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    section h4, section h5 {
+        margin-bottom: 10px;
+    }
+
+.text-decoration-underline {
+    text-decoration: underline;
+}
+
+.opacity-75 {
+    color: #6c757d;
+}
+
+/* Post Table */
+.table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .table tr {
+        border-bottom: 1px solid #ccc;
+    }
+
+        .table tr:last-child {
+            border-bottom: none;
+        }
+
+    .table td {
+        padding: 15px;
+    }
+
+    .table h4 {
+        margin: 0 0 10px;
+        font-size: 1.2em;
+        color: #007bff;
+    }
+
+    .table p, .table span, .table b {
+        margin: 5px 0;
+    }
+
+/* Link Styles */
+a.None, a.link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+    a.None:hover, a.link:hover {
+        text-decoration: underline;
+        color: #0056b3;
+    }
+
+/* Button Styles */
+.btn-primary,
+.btn-outline-dark,
+.btn-secondary,
+.btn-link {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px 5px 5px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary-updated,
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+    .btn-primary-updated:hover,
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #004085;
+    }
+
+.btn-outline-dark,
+.btn-outline-dark-updated {
+    background-color: white;
+    color: #343a40;
+    border-color: #343a40;
+}
+
+    .btn-outline-dark:hover,
+    .btn-outline-dark-updated:hover {
+        background-color: #343a40;
+        color: white;
+    }
+
+.btn-secondary,
+.btn-secondary-updated {
+    background-color: #6c757d;
+    color: white;
+    border-color: #6c757d;
+}
+
+    .btn-secondary:hover,
+    .btn-secondary-updated:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .btn-link:hover {
+        text-decoration: underline;
+    }
+
+/* Like Detail Comment Section */
+.LikeDetailComment {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Form Styles */
+.form-horizontal {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.text-danger {
+    color: #dc3545;
+    font-size: .875rem;
+}
+
+hr {
+    border-top: 1px solid #dee2e6;
+    margin: 20px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}

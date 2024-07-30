@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1adcd1fabcad4a1ea7a01192a6549690" Name="Diagram1">
+        <EntityTypeShape EntityType="FamilyMediaModel.Chat" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamilyMediaModel.Comment" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamilyMediaModel.Friend" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamilyMediaModel.Like" Width="1.5" PointX="5.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamilyMediaModel.Notification" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamilyMediaModel.Post" Width="1.5" PointX="3" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamilyMediaModel.User" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FamilyMediaModel.Meeting" Width="1.5" PointX="3" PointY="23.625" IsExpanded="true" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Chats_Users_Receiver" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Chats_Users_Sender" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Comments_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Comments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Friends_Users_1" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Friends_Users_2" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Likes_Posts" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Likes_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Notification_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Posts_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FamilyMediaModel.FK_Meetings_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

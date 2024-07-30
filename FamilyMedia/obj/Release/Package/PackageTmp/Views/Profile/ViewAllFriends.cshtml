@@ -1,0 +1,24 @@
+﻿@model IEnumerable<FamilyMedia.DTOs.UserDTO>
+
+@{
+    ViewBag.Title = "ViewAllFriends";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+
+<h2>ViewAllFriends</h2>
+
+<table class="table">
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.ActionLink("Detail", "Index", "Profile", new { id = item.Id }, new { area = "" })|
+            @Html.ActionLink("Remove", "Remove", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

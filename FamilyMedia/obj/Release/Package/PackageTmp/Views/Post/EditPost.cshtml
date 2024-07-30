@@ -1,0 +1,71 @@
+﻿@model FamilyMedia.DTOs.PostDTO
+
+@{
+    ViewBag.Title = "EditPost";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+
+<h2>EditPost</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PostTitle, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PostTitle, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PostTitle, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @*@Html.LabelFor(model => model.Privacy, htmlAttributes: new { @class = "control-label col-md-2" })*@
+        <div class="col-md-10">
+            @* @Html.EditorFor(model => model.Privacy, new { htmlAttributes = new { @class = "" } })*@
+            @*@Html.ValidationMessageFor(model => model.Privacy, "", new { @class = "text-danger" })*@
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Privacy, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownListFor(
+                        model => model.Privacy,
+                        new List<SelectListItem>
+                        {
+                            new SelectListItem { Text = "Public", Value = "Public" },
+                            new SelectListItem { Text = "Friends", Value = "Friends" },
+                            new SelectListItem { Text = "Only Me", Value = "OnlyMe" }
+                        },
+                        "Select Privacy",
+                        new { @class = "form-control" }
+                    )
+                    @Html.ValidationMessageFor(model => model.Privacy, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PostData, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PostData, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.PostData, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to Home", "Index")
+</div>

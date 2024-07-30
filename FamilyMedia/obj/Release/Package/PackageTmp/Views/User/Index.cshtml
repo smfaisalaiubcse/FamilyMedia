@@ -1,0 +1,93 @@
+﻿@model IEnumerable<FamilyMedia.DTOs.PostDTO>
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+﻿@if (TempData["Msg"] != null)
+{
+    <div>
+        <span class="text-bg-info">@TempData["Msg"]</span>
+    </div>
+}
+﻿@if (@Session["NotificationCount"] != null)
+{
+    if ((int)Session["NotificationCount"] > 0)
+    {
+        <span class="text-bg-info">You have @Session["NotificationCount"] unread notifications left, go to notification bar to see.</span>
+    }
+}
+
+@if (Model == null)
+{
+    <span> No Post Found </span>
+}
+else
+{
+    <p>
+        @Html.ActionLink("Create Post", "createPost", "Post")
+    </p>
+    <table class="table">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td >
+                    @*new style trying*@
+                    <section aria-labelledby="gettingStartedTitle">
+                        <h4 id="gettingStartedTitle">
+                            @Html.ActionLink(item.UFullName, "Index", "Profile", new { id = item.UId }, new { @class = "None" })
+                        </h4>
+                        <p>
+                            @Html.DisplayFor(modelItem => item.PostData)
+                        </p>
+                        <b >Privacy: </b>
+                        <span class="opacity-75">
+                            @Html.DisplayFor(modelItem => item.Privacy)
+                        </span>
+                        <br />
+                        <b>Posted on: </b> 
+                        <span class="opacity-75">@Html.DisplayFor(modelItem => item.PostTime)</span>
+                        <br />
+                        @foreach (var temp in ViewBag.Likes)
+                        {
+                            if (temp.PostId == item.Id)
+                            {
+                                if(item.LCount > 1)
+                                {
+                                    <span>
+                                        You and @{item.LCount -= 1;}
+                                        @item.LCount other people liked this post
+                                        @{item.LCount += 1;}
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span>You only liked this post</span>
+                                }
+                            }
+                        }
+                        <p>
+                            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                                @using (Html.BeginForm("Index", "Like", new { id = item.Id }, FormMethod.Post))
+                                {
+                                    <input type="submit" value="Like(@item.LCount)" class="btn btn-primary" );" />
+                                }
+                                @using (Html.BeginForm("createComment", "Comment", new { id = item.Id }, FormMethod.Get))
+                                {
+                                    <input type="submit" value="Details &raquo;" class="btn btn-outline-dark" );" />
+                                    <input type="submit" value="Write Comment" class="btn btn-secondary" );" />
+                                }
+                            </div>
+                        </p>
+                    </section>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+}
+

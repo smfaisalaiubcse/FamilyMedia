@@ -1,0 +1,55 @@
+@model FamilyMedia.DTOs.UserDTO
+
+@{
+    ViewBag.Title = "My Profile";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+
+<div class="container">
+    <h2 class="page-header">My Profile</h2>
+
+    <div class="profile-card">
+        <dl class="profile-details">
+            <dt>@Html.DisplayNameFor(model => model.FirstName)</dt>
+            <dd>@Html.DisplayFor(model => model.FirstName)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.LastName)</dt>
+            <dd>@Html.DisplayFor(model => model.LastName)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.Email)</dt>
+            <dd>@Html.DisplayFor(model => model.Email)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.Gender)</dt>
+            <dd>@Html.DisplayFor(model => model.Gender)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.Type)</dt>
+            <dd>@Html.DisplayFor(model => model.Type)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.DOB)</dt>
+            <dd>@Html.DisplayFor(model => model.DOB)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.Password)</dt>
+            <dd>@Html.DisplayFor(model => model.Password)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.OpeningTime)</dt>
+            <dd>@Html.DisplayFor(model => model.OpeningTime)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.SchoolName)</dt>
+            <dd>@Html.DisplayFor(model => model.SchoolName)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.CollegeName)</dt>
+            <dd>@Html.DisplayFor(model => model.CollegeName)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.UniversityName)</dt>
+            <dd>@Html.DisplayFor(model => model.UniversityName)</dd>
+
+            <dt>@Html.DisplayNameFor(model => model.WorksAt)</dt>
+            <dd>@Html.DisplayFor(model => model.WorksAt)</dd>
+        </dl>
+
+        <div class="profile-actions">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-outline-dark" })
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ProfileNotFound";
+    ViewBag.Title = "Profile";
+    if (Session["UserId"] == null)
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+    }
+}
+
+<h2>ProfileNotFound</h2>
+
+<div>
+    @Html.ActionLink("Back to home", "Index", "Home")
+</div>
+
