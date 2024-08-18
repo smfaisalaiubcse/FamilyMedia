@@ -44,11 +44,14 @@
             <td class="d-inline-flex">
                 @if (Session["UserId"] != null)
                 {
+                    <div class="accept-delete">
+
+                    </div>
                     using (Html.BeginForm("Accept", "FindFriend", new { id = item.Id }, FormMethod.Post))
                     {
                         <input type="submit" value="Accept" class="btn btn-success" />
                     }
-                    <span> | </span>
+                    
                     using (Html.BeginForm("Delete", "FindFriend", new { id = item.Id }, FormMethod.Post))
                     {
                         <input type="submit" value="Delete" class="btn btn-danger" />
@@ -95,7 +98,7 @@
                 }
                 <br />
             </td>
-            <td>
+            <td class="d-inline-flex">
                 @{
                     bool SentOrFriend = false;
                     foreach (var temp in ViewBag.AlreadyFriendOrRequested)
@@ -121,7 +124,7 @@
                     {
                         using (Html.BeginForm("AddFriend", "Profile", new { id = item.Id }, FormMethod.Post))
                         {
-                            <input type="submit" value="Add Friend" class="btn btn-primary" />
+                            <input type="submit" value="Add Friend" class="btn btn-primary add-friend-btn" />
                         }
                     }
                 }

@@ -4,6 +4,8 @@ using FamilyMedia.EF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Entity.Infrastructure;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -47,7 +49,12 @@ namespace FamilyMedia.Controllers
                 }
                 if (ok) MyFriends.Add(i);
             }
+            // Get profile picture
+            var profilePicture = (from pp in db.ProfilePictures
+                                  where pp.UId == Id
+                                  select pp.ImagePath).SingleOrDefault();
             ViewBag.FriendsCount = MyFriends.Count();
+            ViewBag.ProfilePicturePath = profilePicture;
             if (Profile == null) return RedirectToAction("ProfileNotFound");
             return View(Convert(Profile));
         }
@@ -84,7 +91,10 @@ namespace FamilyMedia.Controllers
                 if (ok) MyFriends.Add(i);
             }
             ViewBag.FriendsCount = MyFriends.Count();
-            if(Profile == null ) return RedirectToAction("ProfileNotFound");
+            var profilePicture = (from pp in db.ProfilePictures
+                                  where pp.UId == Id
+                                  select pp.ImagePath).SingleOrDefault();
+            ViewBag.ProfilePicturePath = profilePicture;
             return View(Convert(Profile));
         }
         [HttpGet]
@@ -92,6 +102,147 @@ namespace FamilyMedia.Controllers
         {
             return View(); 
         }
+        [HttpGet]
+        public ActionResult UploadProfilePicture()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult UploadProfilePicture(ProfilePictureDTO image)
+        {
+            int LoggedUserId = (int)Session["UserId"];
+
+            // Check if a file was uploaded
+            if (image.ImageFile == null || image.ImageFile.ContentLength == 0)
+            {
+                TempData["Msg"] = "Please upload a picture.";
+                return RedirectToAction("MyProfile");
+            }
+
+            // Get the existing profile picture from the database
+            var existingProfilePicture = db.ProfilePictures.SingleOrDefault(pp => pp.UId == LoggedUserId);
+
+            if (existingProfilePicture != null)
+            {
+                // Remove the existing image file from the Image folder
+                string oldImagePath = Server.MapPath(existingProfilePicture.ImagePath);
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
+
+                // Remove the existing path from the database
+                db.ProfilePictures.Remove(existingProfilePicture);
+                db.SaveChanges();
+            }
+
+            // Save the new image
+            string FileName = Path.GetFileNameWithoutExtension(image.ImageFile.FileName);
+            string Extension = Path.GetExtension(image.ImageFile.FileName);
+            FileName += DateTime.Now.ToString("yymmssfff") + Extension;
+            image.ImagePath = "~/Image/" + FileName;
+            FileName = Path.Combine(Server.MapPath("~/Image/"), FileName);
+            image.ImageFile.SaveAs(FileName);
+
+            // Add the new path to the database
+            ProfilePicture newProfilePicture = new ProfilePicture
+            {
+                UId = LoggedUserId,
+                ImagePath = image.ImagePath,
+            };
+            db.ProfilePictures.Add(newProfilePicture);
+            db.SaveChanges();
+
+            TempData["Msg"] = "Profile picture updated successfully!";
+            return RedirectToAction("MyProfile");
+        }
+
+        [HttpPost]
+        public ActionResult DeleteProfilePicture()
+        {
+            int LoggedUserId = (int)Session["UserId"];
+
+            // Get the existing profile picture from the database
+            var existingProfilePicture = db.ProfilePictures.SingleOrDefault(pp => pp.UId == LoggedUserId);
+
+            if (existingProfilePicture != null)
+            {
+                // Remove the existing image file from the Image folder
+                string imagePath = Server.MapPath(existingProfilePicture.ImagePath);
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+
+                // Remove the profile picture record from the database
+                db.ProfilePictures.Remove(existingProfilePicture);
+                db.SaveChanges();
+
+                TempData["Msg"] = "Profile picture deleted successfully!";
+            }
+            else
+            {
+                TempData["Msg"] = "No profile picture found to delete.";
+            }
+
+            return RedirectToAction("MyProfile");
+        }
+
+        [HttpGet]
+        public ActionResult ChangeProfilePicture()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult ChangeProfilePicture(ProfilePictureDTO image)
+        {
+            int LoggedUserId = (int)Session["UserId"];
+
+            // Check if a file was uploaded
+            if (image.ImageFile == null || image.ImageFile.ContentLength == 0)
+            {
+                TempData["Msg"] = "Please upload a picture.";
+                return RedirectToAction("MyProfile");
+            }
+
+            // Get the existing profile picture from the database
+            var existingProfilePicture = db.ProfilePictures.SingleOrDefault(pp => pp.UId == LoggedUserId);
+
+            if (existingProfilePicture != null)
+            {
+                // Remove the existing image file from the Image folder
+                string oldImagePath = Server.MapPath(existingProfilePicture.ImagePath);
+                if (System.IO.File.Exists(oldImagePath))
+                {
+                    System.IO.File.Delete(oldImagePath);
+                }
+
+                // Remove the existing path from the database
+                db.ProfilePictures.Remove(existingProfilePicture);
+                db.SaveChanges();
+            }
+
+            // Save the new image
+            string FileName = Path.GetFileNameWithoutExtension(image.ImageFile.FileName);
+            string Extension = Path.GetExtension(image.ImageFile.FileName);
+            FileName += DateTime.Now.ToString("yymmssfff") + Extension;
+            image.ImagePath = "~/Image/" + FileName;
+            FileName = Path.Combine(Server.MapPath("~/Image/"), FileName);
+            image.ImageFile.SaveAs(FileName);
+
+            // Add the new path to the database
+            ProfilePicture newProfilePicture = new ProfilePicture
+            {
+                UId = LoggedUserId,
+                ImagePath = image.ImagePath,
+            };
+            db.ProfilePictures.Add(newProfilePicture);
+            db.SaveChanges();
+
+            TempData["Msg"] = "Profile picture updated successfully!";
+            return RedirectToAction("MyProfile");
+        }
+
         [HttpPost]
         public ActionResult AddFriend(int Id)
         {

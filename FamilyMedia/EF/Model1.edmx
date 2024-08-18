@@ -78,11 +78,19 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
           <Property Name="UId" Type="int" Nullable="false" />
           <Property Name="UFullName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Privacy" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="PostTitle" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PostTitle" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="PostTime" Type="datetime" Nullable="false" />
           <Property Name="PostData" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="LCount" Type="int" Nullable="false" />
           <Property Name="CCount" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ProfilePictures">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UId" Type="int" Nullable="false" />
+          <Property Name="ImagePath" Type="varchar(max)" Nullable="false" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
@@ -233,6 +241,18 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_ProfilePictures_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="ProfilePictures" Type="Self.ProfilePictures" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProfilePictures">
+              <PropertyRef Name="UId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="FamilyMediaModelStoreContainer">
           <EntitySet Name="Chats" EntityType="Self.Chats" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
@@ -240,6 +260,7 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
           <EntitySet Name="Likes" EntityType="Self.Likes" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Notifications" EntityType="Self.Notifications" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ProfilePictures" EntityType="Self.ProfilePictures" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Meetings" EntityType="Self.Meetings" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
@@ -294,6 +315,10 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
           <AssociationSet Name="FK_Posts_Users" Association="Self.FK_Posts_Users">
             <End Role="Users" EntitySet="Users" />
             <End Role="Posts" EntitySet="Posts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ProfilePictures_Users" Association="Self.FK_ProfilePictures_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="ProfilePictures" EntitySet="ProfilePictures" />
           </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -364,7 +389,7 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
           <Property Name="UId" Type="Int32" Nullable="false" />
           <Property Name="UFullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Privacy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="PostTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PostTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="PostTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="PostData" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="LCount" Type="Int32" Nullable="false" />
@@ -398,6 +423,7 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
           <Property Name="CollegeName" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
           <Property Name="UniversityName" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
           <Property Name="WorksAt" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ProfilePictures" Relationship="FamilyMediaModel.FK_ProfilePictures_Users" FromRole="User" ToRole="ProfilePicture" />
         </EntityType>
         <EntityType Name="Meeting">
           <Key>
@@ -601,7 +627,33 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
             <End Role="Users" EntitySet="Users" />
             <End Role="Meetings" EntitySet="Meetings" />
           </AssociationSet>
+          <EntitySet Name="ProfilePictures" EntityType="FamilyMediaModel.ProfilePicture" />
+          <AssociationSet Name="FK_ProfilePictures_Users" Association="FamilyMediaModel.FK_ProfilePictures_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="ProfilePicture" EntitySet="ProfilePictures" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="ProfilePicture">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="UId" Type="Int32" Nullable="false" />
+          <Property Name="ImagePath" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="User" Relationship="FamilyMediaModel.FK_ProfilePictures_Users" FromRole="ProfilePicture" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_ProfilePictures_Users">
+          <End Type="FamilyMediaModel.User" Role="User" Multiplicity="1" />
+          <End Type="FamilyMediaModel.ProfilePicture" Role="ProfilePicture" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ProfilePicture">
+              <PropertyRef Name="UId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -702,6 +754,15 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
                 <ScalarProperty Name="MeetingAgenda" ColumnName="MeetingAgenda" />
                 <ScalarProperty Name="MeetingStartTime" ColumnName="MeetingStartTime" />
                 <ScalarProperty Name="Duration" ColumnName="Duration" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProfilePictures">
+            <EntityTypeMapping TypeName="FamilyMediaModel.ProfilePicture">
+              <MappingFragment StoreEntitySet="ProfilePictures">
+                <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+                <ScalarProperty Name="UId" ColumnName="UId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

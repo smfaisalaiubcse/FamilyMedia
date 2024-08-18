@@ -1,0 +1,10 @@
+﻿@model FamilyMedia.DTOs.UserDTO
+
+@{
+    ViewBag.Title = "My Profile";
+    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+}
+<div class="Profile-Container">
+    <p class="FirstName">FirstName: @Model.FirstName </p>
+    <p>LastName: @Model.LastName </p>
+</div>

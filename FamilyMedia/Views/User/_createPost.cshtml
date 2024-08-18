@@ -1,0 +1,39 @@
+﻿@model FamilyMedia.DTOs.PostDTO
+<h2>Create Post</h2>
+<div class="create-post-partial">
+    <form action="/Post/CreatePost" method="post">
+        @Html.AntiForgeryToken()
+
+        <div>
+            <hr />
+            <div class="form-group">
+
+                <div>
+                    Post Title:
+                    <input type="text" name="PostTitle" />
+                    <span class="text-danger">@Html.ValidationMessage("PostTitle")</span>
+                    Post Privacy:
+                        <select name="Privacy">
+                            <option value="">Select Privacy</option>
+                            <option value="Public">Public</option>
+                            <option value="Friends">Friends</option>
+                            <option value="OnlyMe">Only Me</option>
+                        </select>
+                        <span class="text-danger">@Html.ValidationMessage("Privacy")</span>
+                </div>
+            </div>
+            <div class="form-group">
+                Post Body:
+                <div>
+                    <textarea name="PostData"></textarea>
+                    <span class="text-danger">@Html.ValidationMessage("PostData")</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Post" class="btn-partial-create-post" />
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

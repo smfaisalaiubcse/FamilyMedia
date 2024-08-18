@@ -64,7 +64,7 @@
     <Property Name="UId" Type="Int32" Nullable="false" />
     <Property Name="UFullName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Privacy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="PostTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PostTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="PostTime" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="PostData" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="LCount" Type="Int32" Nullable="false" />
@@ -98,6 +98,7 @@
     <Property Name="CollegeName" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
     <Property Name="UniversityName" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
     <Property Name="WorksAt" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ProfilePictures" Relationship="FamilyMediaModel.FK_ProfilePictures_Users" FromRole="User" ToRole="ProfilePicture" />
   </EntityType>
   <EntityType Name="Meeting">
     <Key>
@@ -301,5 +302,31 @@
       <End Role="Users" EntitySet="Users" />
       <End Role="Meetings" EntitySet="Meetings" />
     </AssociationSet>
+    <EntitySet Name="ProfilePictures" EntityType="FamilyMediaModel.ProfilePicture" />
+    <AssociationSet Name="FK_ProfilePictures_Users" Association="FamilyMediaModel.FK_ProfilePictures_Users">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ProfilePicture" EntitySet="ProfilePictures" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="ProfilePicture">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="UId" Type="Int32" Nullable="false" />
+    <Property Name="ImagePath" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="User" Relationship="FamilyMediaModel.FK_ProfilePictures_Users" FromRole="ProfilePicture" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_ProfilePictures_Users">
+    <End Type="FamilyMediaModel.User" Role="User" Multiplicity="1" />
+    <End Type="FamilyMediaModel.ProfilePicture" Role="ProfilePicture" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProfilePicture">
+        <PropertyRef Name="UId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

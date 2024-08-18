@@ -6,68 +6,52 @@
 }
 
 <h2>Create Post</h2>
+<div class="create-post">
+    <form action="/Post/CreatePost" method="post">
+        @Html.AntiForgeryToken()
 
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-<div class="form-horizontal">
-    <hr />
-
-    <div class="form-group">
-        @*@Html.LabelFor(model => model.PostTitle, htmlAttributes: new { @class = "control-label col-md-2" })*@
-        Post Title: 
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.PostTitle, new { htmlAttributes = new { @class = "form-control" } })
-            @Html.ValidationMessageFor(model => model.PostTitle, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        @*@Html.LabelFor(model => model.Privacy, htmlAttributes: new { @class = "control-label col-md-2" })*@
-        <div class="col-md-10">
-           @* @Html.EditorFor(model => model.Privacy, new { htmlAttributes = new { @class = "" } })*@
-            @*@Html.ValidationMessageFor(model => model.Privacy, "", new { @class = "text-danger" })*@
+        <div>
+            <hr />
 
             <div class="form-group">
-                @*@Html.LabelFor(model => model.Privacy, htmlAttributes: new { @class = "control-label col-md-2" })*@
-                Post Privacy: 
-                <div class="col-md-10">
-                    @Html.DropDownListFor(
-                        model => model.Privacy,
-                        new List<SelectListItem>
-                        {
-                            new SelectListItem { Text = "Public", Value = "Public" },
-                            new SelectListItem { Text = "Friends", Value = "Friends" },
-                            new SelectListItem { Text = "Only Me", Value = "OnlyMe" }
-                        },
-                        "Select Privacy",
-                        new { @class = "form-control" }
-                    )
-                    @Html.ValidationMessageFor(model => model.Privacy, "", new { @class = "text-danger" })
+                Post Title:
+                <div>
+                    <input type="text" name="PostTitle" />
+                    <span class="text-danger">@Html.ValidationMessage("PostTitle")</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                Post Privacy:
+                <div>
+                    <select name="Privacy">
+                        <option value="">Select Privacy</option>
+                        <option value="Public">Public</option>
+                        <option value="Friends">Friends</option>
+                        <option value="OnlyMe">Only Me</option>
+                    </select>
+                    <span class="text-danger">@Html.ValidationMessage("Privacy")</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                Post Body:
+                <div>
+                    <textarea name="PostData"></textarea>
+                    <span class="text-danger">@Html.ValidationMessage("PostData")</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
                 </div>
             </div>
         </div>
+    </form>
+
+    <div>
+        <a href="/Home/Index">Back to Home</a>
     </div>
 
-    <div class="form-group">
-       @* @Html.LabelFor(model => model.PostData, htmlAttributes: new { @class = "control-label col-md-2" })*@
-        Post Body:
-        <div class="col-md-10">
-            @*@Html.EditorFor(model => model.PostData, new { htmlAttributes = new { @class = "form-control" } })*@
-            <textarea name="PostData" class="form-control"></textarea>
-            @Html.ValidationMessageFor(model => model.PostData, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Create" class="btn btn-default" />
-        </div>
-    </div>
-</div>
-}
-
-<div>
-    @Html.ActionLink("Back to Home", "Index")
 </div>

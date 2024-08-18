@@ -7,9 +7,7 @@
 
 ﻿@if (TempData["Msg"] != null)
 {
-    <div>
-        <span class="text-bg-info">@TempData["Msg"]</span>
-    </div>
+    <span class="text-bg-info">@TempData["Msg"]</span>
 }
 ﻿@if (@Session["NotificationCount"] != null)
 {
@@ -18,6 +16,8 @@
         <span class="text-bg-info">You have @Session["NotificationCount"] unread notifications left, go to notification bar to see.</span>
     }
 }
+@Html.Partial("_createPost", new FamilyMedia.DTOs.PostDTO())
+<hr />
 
 @if (Model == null)
 {
@@ -25,62 +25,72 @@
 }
 else
 {
-    <p>
-        @Html.ActionLink("Create Post", "createPost", "Post")
-    </p>
-    <table>
+    <table class="table">
         @foreach (var item in Model)
         {
             <tr>
-                <td >
-                    @*new style trying*@
-                    <section aria-labelledby="gettingStartedTitle">
-                        <h4 id="gettingStartedTitle">
-                            @Html.ActionLink(item.UFullName, "Index", "Profile", new { id = item.UId }, new { @class = "None" })
-                        </h4>
-                        <p>
-                            @Html.DisplayFor(modelItem => item.PostData)
-                        </p>
-                        <b >Privacy: </b>
-                        <span class="opacity-75">
-                            @Html.DisplayFor(modelItem => item.Privacy)
-                        </span>
-                        <br />
-                        <b>Posted on: </b> 
-                        <span class="opacity-75">@Html.DisplayFor(modelItem => item.PostTime)</span>
-                        <br />
-                        @foreach (var temp in ViewBag.Likes)
+                <td>
+                    @if (ViewBag.ProfilePictures != null)
+                    {
+                        bool empty = true; ;
+                        foreach (var temp in ViewBag.ProfilePictures)
                         {
-                            if (temp.PostId == item.Id)
+                            if (temp.UId == item.UId)
                             {
-                                if(item.LCount > 1)
-                                {
-                                    <span>
-                                        You and @{item.LCount -= 1;}
-                                        @item.LCount other people liked this post
-                                        @{item.LCount += 1;}
-                                    </span>
-                                }
-                                else
-                                {
-                                    <span>You only liked this post</span>
-                                }
+                                <img src="@Url.Content(temp.ImagePath)" class="post-profile-img" />
+                                empty = false;
                             }
                         }
-                        <p>
-                            <div class="LikeDetailComment">
-                                @using (Html.BeginForm("Index", "Like", new { id = item.Id }, FormMethod.Post))
-                                {
-                                    <input type="submit" value="Like(@item.LCount)" class="btn-primary" );" />
-                                }
-                                @using (Html.BeginForm("createComment", "Comment", new { id = item.Id }, FormMethod.Get))
-                                {
-                                    <input type="submit" value="Details &raquo;" class="btn-outline-dark" );" />
-                                    <input type="submit" value="Write Comment" class="btn-secondary" );" />
-                                }
-                            </div>
-                        </p>
-                    </section>
+                        if (empty)
+                        {
+                            <img src="@Url.Content("~/Image/Null-DP.jpg")" class="post-profile-img" />
+                        }
+                    }
+                    <h4 id="gettingStartedTitle">
+                        @Html.ActionLink(item.UFullName, "Index", "Profile", new { id = item.UId }, new { @class = "None" })
+                    </h4>
+                    <p>
+                        @Html.DisplayFor(modelItem => item.PostData)
+                    </p>
+                    <b>Privacy: </b>
+                    <span class="opacity-75">
+                        @Html.DisplayFor(modelItem => item.Privacy)
+                    </span>
+                    <br />
+                    <b>Posted on: </b>
+                    <span class="opacity-75">@Html.DisplayFor(modelItem => item.PostTime)</span>
+                    <br />
+                    @foreach (var temp in ViewBag.Likes)
+                    {
+                        if (temp.PostId == item.Id)
+                        {
+                            if (item.LCount > 1)
+                            {
+                                <span>
+                                    You and @{item.LCount -= 1;}
+                                    @item.LCount other people liked this post
+                                    @{item.LCount += 1;}
+                                </span>
+                            }
+                            else
+                            {
+                                <span>You only liked this post</span>
+                            }
+                        }
+                    }
+                    <p>
+                        <div class="LikeDetailComment">
+                            @using (Html.BeginForm("Index", "Like", new { id = item.Id }, FormMethod.Post))
+                            {
+                                <input type="submit" value="Like(@item.LCount)" class="btn-primary" );" />
+                            }
+                            @using (Html.BeginForm("createComment", "Comment", new { id = item.Id }, FormMethod.Get))
+                            {
+                                <input type="submit" value="Details &raquo;" class="btn-outline-dark" );" />
+                                <input type="submit" value="Write Comment" class="btn-secondary" );" />
+                            }
+                        </div>
+                    </p>
                 </td>
             </tr>
         }

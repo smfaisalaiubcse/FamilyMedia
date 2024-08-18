@@ -4,21 +4,29 @@
     ViewBag.Title = "Notifications";
     Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
 }
-
+﻿@if (TempData["Msg"] != null)
+{
+    <span class="text-bg-info">@TempData["Msg"]</span>
+}
 <h2>Notifications</h2>
 
 <table class="table">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NData) at 
-            @Html.DisplayFor(modelItem => item.Date)
-        </td>
-        <td>
-            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NData) at
+                @Html.DisplayFor(modelItem => item.Date)
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @using (Html.BeginForm("Delete", "Notification", new { id = item.Id }, FormMethod.Post))
+                {
+                    <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this notification?');" />
+                }
+            </td>
+        </tr>
+    }
 
 </table>

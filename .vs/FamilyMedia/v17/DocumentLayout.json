@@ -3,32 +3,136 @@
   "WorkspaceRootPath": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|e:\\education\\aiub\\11th semester\\familymedia\\familymedia\\views\\post\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\post\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\comment\\createcomment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\comment\\createcomment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\post\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\post\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|e:\\education\\aiub\\11th semester\\familymedia\\familymedia\\views\\post\\editpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\post\\editpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\notification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\notification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|e:\\education\\aiub\\11th semester\\familymedia\\familymedia\\views\\profile\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\profilenotfound.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\profilenotfound.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|e:\\education\\aiub\\11th semester\\familymedia\\familymedia\\views\\profile\\uploadprofilepicture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\uploadprofilepicture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\profile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\user\\_createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\user\\_createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|e:\\education\\aiub\\11th semester\\familymedia\\familymedia\\views\\profile\\changeprofilepicture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\changeprofilepicture.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|e:\\education\\aiub\\11th semester\\familymedia\\familymedia\\dtos\\profilepicturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\dtos\\profilepicturedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|e:\\education\\aiub\\11th semester\\familymedia\\familymedia\\ef\\profilepicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\ef\\profilepicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\ef\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\ef\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\registration\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\viewallfriends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\viewallfriends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\post\\myposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\post\\myposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\user\\_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\user\\_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\findfriend\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\findfriend\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\shared\\_afterloginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\shared\\_afterloginlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\Site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FamilyMedia\\Views\\Shared\\Site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,64 +143,16 @@
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\profilenotfound.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\profilenotfound.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\profilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\findfriendcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\findfriendcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\comment\\createcomment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\comment\\createcomment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\content\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\content\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\content\\bootstrap-grid.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\content\\bootstrap-grid.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\content\\bootstrap.rtl.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\content\\bootstrap.rtl.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\content\\bootstrap.rtl.min.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\content\\bootstrap.rtl.min.css.map||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,22 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\converters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\findfriend\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\findfriend\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\views\\profile\\viewallfriends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\views\\profile\\viewallfriends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,14 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\ef\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\ef\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\ef\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\ef\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|solutionrelative:familymedia\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01F1E2CB-A6F7-408F-927A-1347058E54CE}|FamilyMedia\\FamilyMedia.csproj|E:\\Education\\AIUB\\11th semester\\FamilyMedia\\familymedia\\controllers\\likecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,7 +198,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -174,7 +206,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
+              "Title": "EditPost.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\EditPost.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Post\\EditPost.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\EditPost.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Post\\EditPost.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-18T10:26:19.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MyProfile.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-30T10:54:48.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Site.css",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\Site.css",
+              "RelativeDocumentMoniker": "FamilyMedia\\Content\\Site.css",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\Site.css",
+              "RelativeToolTip": "FamilyMedia\\Content\\Site.css",
+              "ViewState": "AQIAAJ0CAAAAAAAAAAAQwKMCAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-24T15:51:53.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Notification\\Index.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Notification\\Index.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Notification\\Index.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Notification\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T19:25:19.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\NotificationController.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "FamilyMedia\\Controllers\\NotificationController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwB0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T19:24:06.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "createComment.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Comment\\createComment.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Comment\\createComment.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Comment\\createComment.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Comment\\createComment.cshtml",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAQwG8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T10:12:55.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "createPost.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\createPost.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Post\\createPost.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\createPost.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Post\\createPost.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAABUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T09:18:27.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ProfileNotFound.cshtml",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\ProfileNotFound.cshtml",
               "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\ProfileNotFound.cshtml",
@@ -182,35 +305,330 @@
               "RelativeToolTip": "FamilyMedia\\Views\\Profile\\ProfileNotFound.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T14:24:29.473Z"
+              "WhenOpened": "2024-07-23T14:24:29.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UploadProfilePicture.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\UploadProfilePicture.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\UploadProfilePicture.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\UploadProfilePicture.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\UploadProfilePicture.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-18T05:48:01.729Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Index.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\Index.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Index.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADAAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T08:01:48.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProfileController.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\ProfileController.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\ProfileController.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\ProfileController.cs",
+              "RelativeToolTip": "FamilyMedia\\Controllers\\ProfileController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAYwF8AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T08:06:02.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "FamilyMedia\\Views\\User\\Index.cshtml",
               "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\User\\Index.cshtml",
               "RelativeToolTip": "FamilyMedia\\Views\\User\\Index.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAB4AAAAKAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAQwC8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T09:23:31.07Z"
+              "WhenOpened": "2024-07-23T09:23:31.07Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\UserController.cs",
+              "RelativeToolTip": "FamilyMedia\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAwFgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:07:51.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Profile.css",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Profile.css",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\Profile.css",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Profile.css",
+              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\Profile.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-30T17:36:01.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_createPost.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\User\\_createPost.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\User\\_createPost.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\User\\_createPost.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\User\\_createPost.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T19:40:38.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProfilePictureDTO.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\DTOs\\ProfilePictureDTO.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\DTOs\\ProfilePictureDTO.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\DTOs\\ProfilePictureDTO.cs",
+              "RelativeToolTip": "FamilyMedia\\DTOs\\ProfilePictureDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T05:35:20.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\RegistrationController.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "FamilyMedia\\Controllers\\RegistrationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:29:33.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChangeProfilePicture.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\ChangeProfilePicture.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\ChangeProfilePicture.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\ChangeProfilePicture.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\ChangeProfilePicture.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-18T08:00:53.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProfilePicture.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\ProfilePicture.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\EF\\ProfilePicture.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\ProfilePicture.cs",
+              "RelativeToolTip": "FamilyMedia\\EF\\ProfilePicture.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T05:34:52.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\Model1.edmx",
+              "RelativeDocumentMoniker": "FamilyMedia\\EF\\Model1.edmx",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "FamilyMedia\\EF\\Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-07-23T08:06:44.652Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Registration\\Index.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Registration\\Index.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Registration\\Index.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Registration\\Index.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAEoAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T06:08:36.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CommentController.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\CommentController.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\CommentController.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\CommentController.cs",
+              "RelativeToolTip": "FamilyMedia\\Controllers\\CommentController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAYwFAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T13:24:06.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\PostController.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\PostController.cs",
+              "RelativeToolTip": "FamilyMedia\\Controllers\\PostController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAgwDAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:10:11.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "FamilyMedia\\DTOs\\UserDTO.cs",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "FamilyMedia\\DTOs\\UserDTO.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwDQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:29:13.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ViewAllFriends.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T14:16:59.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "EditProfile.cshtml",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\EditProfile.cshtml",
               "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\EditProfile.cshtml",
               "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\EditProfile.cshtml",
               "RelativeToolTip": "FamilyMedia\\Views\\Profile\\EditProfile.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T10:32:09.997Z"
+              "WhenOpened": "2024-07-30T10:32:09.997Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Login\\Index.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwB4AAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T06:25:23.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MyPosts.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\MyPosts.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Post\\MyPosts.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\MyPosts.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Post\\MyPosts.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T06:50:01.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_View.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\User\\_View.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\User\\_View.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\User\\_View.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\User\\_View.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-17T20:12:04.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\FindFriend\\Index.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\FindFriend\\Index.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\FindFriend\\Index.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\FindFriend\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T09:42:52.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_AfterLoginLayout.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAKgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T09:42:59.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FamilyMedia\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T08:26:52.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Site.css",
+              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\Site.css",
+              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Shared\\Site.css",
+              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\Site.css",
+              "RelativeToolTip": "FamilyMedia\\Views\\Shared\\Site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-17T13:49:59.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "ChatController.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\ChatController.cs",
@@ -222,68 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyProfile.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\MyProfile.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-30T10:54:48.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Site.css",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\Site.css",
-              "RelativeDocumentMoniker": "FamilyMedia\\Content\\Site.css",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\Site.css",
-              "RelativeToolTip": "FamilyMedia\\Content\\Site.css",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAAACEAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-24T15:51:53.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Index.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\Index.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Index.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\Index.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC0AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T08:01:48.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "createPost.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\createPost.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Post\\createPost.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Post\\createPost.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\Post\\createPost.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADEAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T09:18:27.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Profile.css",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Profile.css",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\Profile.css",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\Profile.css",
-              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\Profile.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-30T17:36:01.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 34,
               "Title": "Web.config",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Web.config",
               "RelativeDocumentMoniker": "FamilyMedia\\Web.config",
@@ -296,43 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_AfterLoginLayout.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\Shared\\_AfterLoginLayout.cshtml",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAH4AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T09:42:59.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProfileController.cs",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\ProfileController.cs",
-              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\ProfileController.cs",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\ProfileController.cs",
-              "RelativeToolTip": "FamilyMedia\\Controllers\\ProfileController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T08:06:02.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "createComment.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Comment\\createComment.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Comment\\createComment.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Comment\\createComment.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\Comment\\createComment.cshtml",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAIwH8AAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T10:12:55.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 35,
               "Title": "FindFriendController.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\FindFriendController.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\FindFriendController.cs",
@@ -344,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 36,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "FamilyMedia\\Views\\_ViewStart.cshtml",
@@ -356,31 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\DTOs\\UserDTO.cs",
-              "RelativeDocumentMoniker": "FamilyMedia\\DTOs\\UserDTO.cs",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\DTOs\\UserDTO.cs",
-              "RelativeToolTip": "FamilyMedia\\DTOs\\UserDTO.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAywDQAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T09:29:13.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T08:26:52.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 37,
               "Title": "Global.asax.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Global.asax.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\Global.asax.cs",
@@ -392,91 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Navbar.css",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\Navbar.css",
-              "RelativeDocumentMoniker": "FamilyMedia\\Content\\Navbar.css",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\Navbar.css",
-              "RelativeToolTip": "FamilyMedia\\Content\\Navbar.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-30T05:40:28.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "bootstrap-grid.css",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap-grid.css",
-              "RelativeDocumentMoniker": "FamilyMedia\\Content\\bootstrap-grid.css",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap-grid.css",
-              "RelativeToolTip": "FamilyMedia\\Content\\bootstrap-grid.css",
-              "ViewState": "AQIAAKsAAAAAAAAAAAAAAK8AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-25T15:25:45.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "bootstrap.css",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap.css",
-              "RelativeDocumentMoniker": "FamilyMedia\\Content\\bootstrap.css",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap.css",
-              "RelativeToolTip": "FamilyMedia\\Content\\bootstrap.css",
-              "ViewState": "AQIAAEMCAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-29T17:53:37.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "bootstrap.rtl.min.css.map",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap.rtl.min.css.map",
-              "RelativeDocumentMoniker": "FamilyMedia\\Content\\bootstrap.rtl.min.css.map",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap.rtl.min.css.map",
-              "RelativeToolTip": "FamilyMedia\\Content\\bootstrap.rtl.min.css.map",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-24T15:51:57.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "bootstrap.rtl.min.css",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap.rtl.min.css",
-              "RelativeDocumentMoniker": "FamilyMedia\\Content\\bootstrap.rtl.min.css",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Content\\bootstrap.rtl.min.css",
-              "RelativeToolTip": "FamilyMedia\\Content\\bootstrap.rtl.min.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-24T15:52:02.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\UserController.cs",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\UserController.cs",
-              "RelativeToolTip": "FamilyMedia\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAswA8AAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T09:07:51.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\FindFriend\\Index.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\FindFriend\\Index.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\FindFriend\\Index.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\FindFriend\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAIwBMAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T09:42:52.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 38,
               "Title": "LoginController.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\LoginController.cs",
@@ -488,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 39,
               "Title": "Converters.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\Converters.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\Converters.cs",
@@ -500,31 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ViewAllFriends.cshtml",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
-              "RelativeDocumentMoniker": "FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
-              "RelativeToolTip": "FamilyMedia\\Views\\Profile\\ViewAllFriends.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T14:16:59.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PostController.cs",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\PostController.cs",
-              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\PostController.cs",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\PostController.cs",
-              "RelativeToolTip": "FamilyMedia\\Controllers\\PostController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAgwCQAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T09:10:11.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "HomeController.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\HomeController.cs",
@@ -536,19 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CommentController.cs",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\CommentController.cs",
-              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\CommentController.cs",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\CommentController.cs",
-              "RelativeToolTip": "FamilyMedia\\Controllers\\CommentController.cs",
-              "ViewState": "AQIAAKgAAAAAAAAAAAAowLAAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T13:24:06.147Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 41,
               "Title": "FriendDTO.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\DTOs\\FriendDTO.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\DTOs\\FriendDTO.cs",
@@ -560,19 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "RegistrationController.cs",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\RegistrationController.cs",
-              "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\RegistrationController.cs",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\RegistrationController.cs",
-              "RelativeToolTip": "FamilyMedia\\Controllers\\RegistrationController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCwAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T09:29:33.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 42,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\User.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\EF\\User.cs",
@@ -584,18 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Model1.edmx [Diagram1]",
-              "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\Model1.edmx",
-              "RelativeDocumentMoniker": "FamilyMedia\\EF\\Model1.edmx",
-              "ToolTip": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\Model1.edmx [Diagram1]",
-              "RelativeToolTip": "FamilyMedia\\EF\\Model1.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-07-23T08:06:44.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "LikeController.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Controllers\\LikeController.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\Controllers\\LikeController.cs",
@@ -607,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "Friend.cs",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\EF\\Friend.cs",
               "RelativeDocumentMoniker": "FamilyMedia\\EF\\Friend.cs",
@@ -619,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Chat\\Index.cshtml",
               "RelativeDocumentMoniker": "FamilyMedia\\Views\\Chat\\Index.cshtml",
@@ -631,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "Create.cshtml",
               "DocumentMoniker": "E:\\Education\\AIUB\\11th semester\\FamilyMedia\\FamilyMedia\\Views\\Chat\\Create.cshtml",
               "RelativeDocumentMoniker": "FamilyMedia\\Views\\Chat\\Create.cshtml",

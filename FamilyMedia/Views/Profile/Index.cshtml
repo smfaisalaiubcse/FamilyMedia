@@ -12,43 +12,40 @@
     }
 }
 
-@{
-    if (Session["UserId"] != null)
+<main>
+    @if (TempData["Msg"] != null)
     {
-        using (Html.BeginForm("AddFriend", "Profile", new { id = Model.Id }, FormMethod.Post))
-        {
-            <input type="submit" value="Add Friend" class="btn btn-success" />
-        }
+        <div class="alert alert-info">
+            @TempData["Msg"]
+        </div>
     }
-}
 
-﻿@if (TempData["Msg"] != null)
-{
-    <div>
-        <span class="text-bg-info">@TempData["Msg"]</span>
-    </div>
-}
-
-<div>
-    <h3>Profile</h3>
+    <h3 class="profile-heading">Profile</h3>
     <hr />
-    <div>
-        <span class="fw-bold">Full Name:</span> @Html.DisplayFor(model => model.FirstName)
+
+    <div class="profile-picture">
+        @if (!string.IsNullOrEmpty(ViewBag.ProfilePicturePath))
+        {
+            <img src="@Url.Content(ViewBag.ProfilePicturePath)" alt="Profile Picture" class="profile-img" />
+        }
+        else
+        {
+            <span class="no-profile-picture">No profile picture.</span>
+            <div class="profile-picture-actions">
+                <a href="/Profile/UploadProfilePicture" class="btn btn-primary">Upload Profile Picture</a>
+            </div>
+        }
     </div>
-    <div>
-        <span class="fw-bold">Email:</span> @Html.DisplayFor(model => model.Email)
+
+    <div class="profile-details">
+        <div><span class="profile-label">Full Name:</span> @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</div>
+        <div><span class="profile-label">Email:</span> @Html.DisplayFor(model => model.Email)</div>
+        <div><span class="profile-label">Gender:</span> @Html.DisplayFor(model => model.Gender)</div>
+        <div><span class="profile-label">Date Of Birth:</span> @Html.DisplayFor(model => model.DOB)</div>
+        <div><span class="profile-label">Opening Time:</span> @Html.DisplayFor(model => model.OpeningTime)</div>
+        <div><span class="profile-label">School Name:</span> @Html.DisplayFor(model => model.SchoolName)</div>
+        <div><span class="profile-label">College Name:</span> @Html.DisplayFor(model => model.CollegeName)</div>
+        <div><span class="profile-label">University Name:</span> @Html.DisplayFor(model => model.UniversityName)</div>
+        <div><span class="profile-label">Works At:</span> @Html.DisplayFor(model => model.WorksAt)</div>
     </div>
-    <div>
-        <span class="fw-bold">Gender:</span> @Html.DisplayFor(model => model.Gender)
-    </div>
-    <div>
-        <span class="fw-bold">Date Of Birth:</span> @Html.DisplayFor(model => model.DOB)
-    </div>
-    <div>
-        <span class="fw-bold">Number Of Friend:</span> @ViewBag.FriendsCount
-        @Html.ActionLink("(See all)", "ViewAllFriends")
-    </div>
-</div>
-<p>
-    @Html.ActionLink("Edit", "EditProfile", new { id = Model.Id })
-</p>
+</main>

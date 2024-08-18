@@ -1,10 +1,67 @@
 ﻿@model FamilyMedia.DTOs.UserDTO
 
 @{
-    ViewBag.Title = "My Profile";
-    Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+    ViewBag.Title = "Profile";
+    if (Session["UserId"] == null)
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
+    }
 }
-<div class="Profile-Container">
-    <p class="FirstName">FirstName: @Model.FirstName </p>
-    <p>LastName: @Model.LastName </p>
-</div>
+
+<main>
+    @if (TempData["Msg"] != null)
+    {
+        <div class="alert alert-info">
+            @TempData["Msg"]
+        </div>
+    }
+
+
+        <div class="profile-picture">
+            @if (!string.IsNullOrEmpty(ViewBag.ProfilePicturePath))
+            {
+                <img src="@Url.Content(ViewBag.ProfilePicturePath)" alt="Profile Picture" class="profile-img" />
+                <div class="profile-picture-actions">
+                    <form action="@Url.Action("ChangeProfilePicture", "Profile")" method="Get">
+                        <button type="submit" class="btn btn-primary">Change Profile Picture</button>
+                    </form>
+                    <form action="@Url.Action("DeleteProfilePicture", "Profile")" method="post" class="delete-picture-form">
+                        <button type="submit" class="btn btn-danger">Delete Profile Picture</button>
+                    </form>
+                </div>
+            }
+            else
+            {
+                <span class="no-profile-picture">No profile picture.</span>
+                <div class="profile-picture-actions">
+                    <form action="@Url.Action("UploadProfilePicture", "Profile")" method="Get">
+                        <button type="submit" class="btn btn-primary">Upload Profile Picture</button>
+                    </form>
+                </div>
+            }
+        </div>
+
+        <div class="profile-details">
+            <div><span class="profile-label">Full Name:</span> @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</div>
+            <div><span class="profile-label">Email:</span> @Html.DisplayFor(model => model.Email)</div>
+            <div><span class="profile-label">Gender:</span> @Html.DisplayFor(model => model.Gender)</div>
+            <div><span class="profile-label">Date Of Birth:</span> @Html.DisplayFor(model => model.DOB)</div>
+            <div><span class="profile-label">Opening Time:</span> @Html.DisplayFor(model => model.OpeningTime)</div>
+            <div><span class="profile-label">School Name:</span> @Html.DisplayFor(model => model.SchoolName)</div>
+            <div><span class="profile-label">College Name:</span> @Html.DisplayFor(model => model.CollegeName)</div>
+            <div><span class="profile-label">University Name:</span> @Html.DisplayFor(model => model.UniversityName)</div>
+            <div><span class="profile-label">Works At:</span> @Html.DisplayFor(model => model.WorksAt)</div>
+            <div><span class="profile-label">Number Of Friends:</span> @ViewBag.FriendsCount @Html.ActionLink("(See all)", "ViewAllFriends", new { @class = "btn btn-link" })</div>
+        </div>
+
+        <p>
+            <form action="@Url.Action("EditProfile", "Profile")" method="Get">
+                <button type="submit" class="btn btn-primary">Edit Profile Info</button>
+            </form>
+            @*@Html.ActionLink("Edit", "EditProfile", new { id = Model.Id }, new { @class = "btn btn-primary" })*@
+        </p>
+</main>

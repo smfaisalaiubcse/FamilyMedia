@@ -63,7 +63,7 @@ namespace FamilyMedia.Controllers
                 if (ok) MyFriends.Add(i);
             }
             List<Post> posts = new List<Post>();
-            foreach(var i in data)
+            foreach (var i in data)
             {
                 if (i.Privacy == "Friends")
                 {
@@ -79,9 +79,14 @@ namespace FamilyMedia.Controllers
                 else
                 {
                     if(i.Privacy != "OnlyMe")
+                    {
                         posts.Add(i);
+                    }
+                        
                 }
             }
+            List<ProfilePicture> ProfilePictures = db.ProfilePictures.ToList();
+            ViewBag.ProfilePictures = ProfilePictures;
             var Notifications = (from n in db.Notifications
                                  where n.UId == UserId
                                  where n.Seen == "No"

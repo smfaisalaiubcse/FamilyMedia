@@ -108,21 +108,21 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <hr />
+    <div class="create-comment">
+ 
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
         <div class="form-group">
             Write your comment below:
             <div class="col-md-10">
-                <input type="text" name="CommentData" class="form-control" /> <br>
+                <input type="text" name="CommentData"/> <br>
                 <span class="text-danger">@Html.ValidationMessage("CommentData")</span>
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Comment" class="btn btn-secondary" />
+                <input type="submit" value="Comment" class="btn btn-primary" />
             </div>
         </div>
     </div>

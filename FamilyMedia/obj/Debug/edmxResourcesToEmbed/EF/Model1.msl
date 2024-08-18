@@ -98,5 +98,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ProfilePictures">
+      <EntityTypeMapping TypeName="FamilyMediaModel.ProfilePicture">
+        <MappingFragment StoreEntitySet="ProfilePictures">
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="UId" ColumnName="UId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

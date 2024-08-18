@@ -1,41 +1,95 @@
-﻿<!DOCTYPE html>
+﻿@*new design*@
+@{
+    string currentAction = ViewContext.RouteData.Values["action"].ToString();
+    string currentController = ViewContext.RouteData.Values["controller"].ToString();
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Simple Blog Site</title>
+    <title>@ViewBag.Title - Family Media</title>
+    @*<link href="~/Content/BeforeLogin.css" rel="stylesheet" type="text/css" />*@
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-        <div class="container">
-            @Html.ActionLink("Simple Blog Site", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Registration", "Index", "Registration", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Login", "Index", "Login", new { area = "" }, new { @class = "nav-link" })</li>
+    <header>
+        <nav>
+            <div class="container">
+                @Html.ActionLink("Family Media", "Index", "User", new { area = "" }, new { @class = "logo" })
+                <ul class="navbar">
+                    <li class="@(currentController == "Home" && currentAction == "Index" ? "active" : "")">
+                        @Html.ActionLink("Home", "Index", "Home")
+                    </li>
+                    <li class="@(currentController == "Home" && currentAction == "About" ? "active" : "")">
+                        @Html.ActionLink("About", "About", "Home")
+                    </li>
+                    <li class="@(currentController == "Home" && currentAction == "Contact" ? "active" : "")">
+                        @Html.ActionLink("Contact", "Contact", "Home")
+                    </li>
+                    <li class="@(currentController == "Registration" && currentAction == "Index" ? "active" : "")">
+                        @Html.ActionLink("Registration", "Index", "Registration")
+                    </li>
+                    <li class="@(currentController == "Login" && currentAction == "Index" ? "active" : "")">
+                        @Html.ActionLink("Login", "Index", "Login")
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    <div class="container body-content">
+        </nav>
+    </header>
+    <main class="content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Simple Blog Site an ASP.NET Application</p>
-        </footer>
-    </div>
+    </main>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="Home/About">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Report Bugs</a></li>
+                        <li><a href="#">Talk To Admin</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Others</h4>
+                    <ul>
+                        <li><a href="#">University Management System</a></li>
+                        <li><a href="#">Trip Nest</a></li>
+                        <li><a href="#">Library Management System</a></li>
+                        <li><a href="#">Meeting Schedular</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/smfaisal48406/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/itssmfaisal" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="@Html.Raw("https://www.youtube.com/@smfaisal5395")" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/s-m-faisal/" target="_blank"><i class="fab fa-linkedin-in" target="_blank"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
+
+

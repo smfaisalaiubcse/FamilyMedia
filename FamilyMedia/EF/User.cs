@@ -26,6 +26,7 @@ namespace FamilyMedia.EF
             this.Notifications = new HashSet<Notification>();
             this.Posts = new HashSet<Post>();
             this.Meetings = new HashSet<Meeting>();
+            this.ProfilePictures = new HashSet<ProfilePicture>();
         }
     
         public int Id { get; set; }
@@ -59,5 +60,7 @@ namespace FamilyMedia.EF
         public virtual ICollection<Post> Posts { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Meeting> Meetings { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ProfilePicture> ProfilePictures { get; set; }
     }
 }

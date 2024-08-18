@@ -5,8 +5,6 @@
     Layout = "~/Views/Shared/_AfterLoginLayout.cshtml";
 }
 
-<h2>Index</h2>
-
 ﻿@if (TempData["Msg"] != null)
 {
     <div>
@@ -30,7 +28,7 @@ else
     <p>
         @Html.ActionLink("Create Post", "createPost", "Post")
     </p>
-    <table class="table">
+    <table>
         @foreach (var item in Model)
         {
             <tr>
@@ -70,15 +68,15 @@ else
                             }
                         }
                         <p>
-                            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                            <div class="LikeDetailComment">
                                 @using (Html.BeginForm("Index", "Like", new { id = item.Id }, FormMethod.Post))
                                 {
-                                    <input type="submit" value="Like(@item.LCount)" class="btn btn-primary" );" />
+                                    <input type="submit" value="Like(@item.LCount)" class="btn-primary" );" />
                                 }
                                 @using (Html.BeginForm("createComment", "Comment", new { id = item.Id }, FormMethod.Get))
                                 {
-                                    <input type="submit" value="Details &raquo;" class="btn btn-outline-dark" );" />
-                                    <input type="submit" value="Write Comment" class="btn btn-secondary" );" />
+                                    <input type="submit" value="Details &raquo;" class="btn-outline-dark" );" />
+                                    <input type="submit" value="Write Comment" class="btn-secondary" );" />
                                 }
                             </div>
                         </p>

@@ -21,6 +21,13 @@ namespace FamilyMedia.Controllers
         {
             try
             {
+                var existingUser = db.Users.FirstOrDefault(u => u.Email == user.Email);
+                if (existingUser != null)
+                {
+                    TempData["msg"] = "Email already in use. Please use a different email.";
+                    return View("Index");
+                }
+
                 db.Users.Add(Convert(user));
                 db.SaveChanges();
                 return RedirectToAction("Index", "Login");

@@ -33,5 +33,6 @@ namespace FamilyMedia.EF
         public virtual DbSet<Post> Posts { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Meeting> Meetings { get; set; }
+        public virtual DbSet<ProfilePicture> ProfilePictures { get; set; }
     }
 }

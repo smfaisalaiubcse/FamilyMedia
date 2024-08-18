@@ -73,11 +73,19 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
     <Property Name="UId" Type="int" Nullable="false" />
     <Property Name="UFullName" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Privacy" Type="varchar" MaxLength="50" Nullable="false" />
-    <Property Name="PostTitle" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PostTitle" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="PostTime" Type="datetime" Nullable="false" />
     <Property Name="PostData" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="LCount" Type="int" Nullable="false" />
     <Property Name="CCount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProfilePictures">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UId" Type="int" Nullable="false" />
+    <Property Name="ImagePath" Type="varchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
@@ -228,6 +236,18 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_ProfilePictures_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ProfilePictures" Type="Self.ProfilePictures" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProfilePictures">
+        <PropertyRef Name="UId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="FamilyMediaModelStoreContainer">
     <EntitySet Name="Chats" EntityType="Self.Chats" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
@@ -235,6 +255,7 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
     <EntitySet Name="Likes" EntityType="Self.Likes" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Notifications" EntityType="Self.Notifications" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProfilePictures" EntityType="Self.ProfilePictures" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Meetings" EntityType="Self.Meetings" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
@@ -289,6 +310,10 @@ warning 6002: The table/view 'FamilyMedia.dbo.Meetings' does not have a primary 
     <AssociationSet Name="FK_Posts_Users" Association="Self.FK_Posts_Users">
       <End Role="Users" EntitySet="Users" />
       <End Role="Posts" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProfilePictures_Users" Association="Self.FK_ProfilePictures_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ProfilePictures" EntitySet="ProfilePictures" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

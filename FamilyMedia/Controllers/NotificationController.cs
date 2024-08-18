@@ -26,16 +26,34 @@ namespace FamilyMedia.Controllers
             {
                 item.Seen = "Yes";
                 db.SaveChanges();
-                TempData["Msg"] = "Notification seen";
+                //if (TempData["msg"] ==  null)
+                //    TempData["Msg"] = "All Notifications are seen now.";
             }
             return View(Convert(data.ToList()));
         }
-        public static NotificationDTO Convert(Notification b)
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            var notification = db.Notifications.Find(id);
+            if (notification != null)
+            {
+                db.Notifications.Remove(notification);
+                db.SaveChanges();
+                TempData["Msg"] = "Notification deleted successfully";
+            }
+            else
+            {
+                TempData["Msg"] = "Notification not found.";
+            }
+            return RedirectToAction("Index");
+        }
+        public static NotificationDTO Convert(Notification n)
         {
             return new NotificationDTO()
             {
-                NData = b.NData,
-                Date = b.Date,
+                Id = n.Id,
+                NData = n.NData,
+                Date = n.Date,
             };
         }
         public static List<NotificationDTO> Convert(List<Notification> notifcations)

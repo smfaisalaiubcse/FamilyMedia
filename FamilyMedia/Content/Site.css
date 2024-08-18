@@ -1,50 +1,37 @@
-﻿/* Set padding to keep content from hitting the edges */
-/*.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-/*.dl-horizontal dt {
-    white-space: normal;
-}*/
-
-/* Set width on the form input elements since they're 100% wide by default */
-/*input,
-select,
-textarea {
-    max-width: 280px;
-}*/
-
-
-/*new design*/
-
-/* General Styles */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    background-color: #f9f9f9;
+    background-color: white;
+}
+
+/* Main Content Styles */
+main.content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    max-width: 100%;
+    margin: 80px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Header Styles */
 header {
-    background-color: #333;
+    background-color: #046169;
     color: white;
-    padding: 15px 0;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensures the header stays above other content */
+    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -58,6 +45,7 @@ header {
         color: white;
         font-size: 1.5em;
         text-decoration: none;
+        margin-left: -140px;
     }
 
     header .navbar {
@@ -65,6 +53,7 @@ header {
         margin: 0;
         padding: 0;
         display: flex;
+        margin-right: -150px;
     }
 
         header .navbar li {
@@ -83,29 +72,20 @@ header {
                 }
 
 .navbar li.active a {
-    background-color: #007bff; /* Background color for active link */
-    color: white; /* Text color for active link */
+    background-color: #032f3c;
+    color: white;
     border-radius: 5px;
 }
 
     .navbar li.active a:hover {
-        background-color: #0056b3; /* Darker shade on hover */
+        background-color: #02474d;
     }
 
-/* Main Content Styles */
-main.content {
-    flex: 1;
-    padding: 20px;
-    background-color: white;
-    max-width: 800px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+
 
 /* Heading Styles */
 h2, h4, h5 {
     color: #333;
-    margin: 20px 0;
 }
 
 h5 {
@@ -129,7 +109,7 @@ h5 {
 section {
     margin: 20px 0;
     padding: 15px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -152,6 +132,7 @@ section {
     max-width: 1000px;
     margin: 20px auto;
     background-color: white;
+    border-radius: 5px;
     border-collapse: collapse;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -178,6 +159,13 @@ section {
         margin: 5px 0;
     }
 
+    /* Add Friend Button Styles */
+    .table td .btn-primary {
+        margin-left: auto;
+        display: block;
+        text-align: right; /* Aligns the button to the right */
+    }
+
 /* Link Styles */
 a.None, a.link {
     text-decoration: none;
@@ -189,7 +177,7 @@ a.None, a.link {
         color: #0056b3;
     }
 
-/* Button Styles */
+/* Existing Button Styles */
 .btn-primary,
 .btn-outline-dark,
 .btn-secondary,
@@ -257,6 +245,61 @@ a.None, a.link {
         text-decoration: underline;
     }
 
+/* New Button Styles */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-partial-create-post, .btn-create-post {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin: 5px 5px 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create-post {
+    width: 100%;
+}
+.btn-partial-create-post{
+    width: 97%;
+}
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+    }
+
+/* Inline-flex container styles */
+.d-inline-flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+    .d-inline-flex span {
+        margin: 0 10px;
+    }
+
 /* Like Detail Comment Section */
 .LikeDetailComment {
     display: flex;
@@ -273,7 +316,7 @@ a.None, a.link {
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
     .form-group label {
@@ -306,18 +349,367 @@ hr {
     margin: 20px 0;
 }
 
-/* Footer Styles */
-footer {
+/* Specific Styles for Create Post Page */
+.create-post h2,
+.create-post-partial h2{
     text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.create-post input[type="text"],
+.create-post textarea,
+.create-post select,
+.create-post-partial input[type="text"],
+.create-post-partial textarea,
+.create-post-partial select {
+    width: 350px;
     padding: 10px;
-    background-color: #333;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.create-post btn-primary {
+    width: 100%;
+}
+.create-post textarea {
+    resize: vertical;
+    height: 100px;
+    width: 350px;
+    resize: none;
+}
+
+.create-post-partial textarea {
+    resize: vertical;
+    height: 100px;
+    width: 97%;
+    resize: none;
+}
+
+.create-post .form-group, create-post-partial .form-group {
+    margin-bottom: 1px;
+}
+
+    .create-post .form-group label, .create-post-partial .form-group label {
+        font-weight: bold;
+    }
+
+    .create-post .form-group .text-danger, .create-post-partial .form-group .text-danger {
+        font-size: 12px;
+    }
+
+.create-post input[type="submit"], .create-post-partial input[type="submit"] {
+    background-color: #007bff;
     color: white;
-    /*position: fixed;*/
-    bottom: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .create-post input[type="submit"], .create-post-partial input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+.create-post a, .create-post-partial a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+    .create-post a:hover, .create-post-partial a:hover {
+        text-decoration: underline;
+    }
+
+.login-form h4, .registration-form h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-form .form-group, .registration-form .form-group {
+    margin-bottom: 15px;
+    width: 350px;
+}
+
+.login-form label, .registration-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="date"],
+.registration-form input[type="password"],
+.registration-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.login-form .text-danger, .registration-form .text-danger {
+    color: #d9534f;
+    font-size: 12px;
+}
+
+/* Login and Registration Button */
+.login-form .btn-primary,
+.registration-form .btn-primary {
+    background-color: #007bff; /* Bootstrap primary blue color */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
     width: 100%;
 }
 
-.FirstName{
-    margin-top:12px;
-    color:blue;
+    .login-form .btn-primary:hover,
+    .registration-form .btn-primary:hover {
+        background-color: #0056b3; /* Darker shade for hover state */
+    }
+
+.login-form .register-link, .registration-form .register-link {
+    text-align: center;
+    margin-top: 15px;
 }
+
+    .login-form .register-link a, .registration-form .register-link a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+        .login-form .register-link a:hover, .registration-form .register-link a:hover {
+            text-decoration: underline;
+        }
+
+/*Footer*/
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #046169;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+    .footer-col ul {
+        padding: 0; /* Ensure there is no padding */
+        margin-top: 0; /* Remove top margin */
+    }
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+        .footer-col ul li a:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+    .footer-col .social-links a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+
+        .footer-col .social-links a:hover {
+            color: #046169;
+            background-color: #ffffff;
+        }
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* Profile Section Styles */
+.profile-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-heading {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Profile Picture in Post Styles */
+.post-profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+    object-fit: cover;
+}
+
+.profile-picture-actions {
+    margin-top: 10px;
+    display: flex;
+}
+
+.no-profile-picture {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.alert-info {
+    background-color: #d9edf7;
+    color: #31708f;
+    padding: 10px;
+    border: 1px solid #bce8f1;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Comment Section Styles */
+.create-comment {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    .create-comment .form-group {
+        margin-bottom: 15px;
+    }
+
+    .create-comment input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        box-sizing: border-box;
+        margin-top: 5px;
+    }
+
+        .create-comment input[type="text"]:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+    .create-comment .btn-primary {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .create-comment .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+    .create-comment .text-danger {
+        color: #dc3545;
+        font-size: 12px;
+        margin-top: 5px;
+    }

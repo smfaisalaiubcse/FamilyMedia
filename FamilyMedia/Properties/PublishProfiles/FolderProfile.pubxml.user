@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>E:\MyWeb</_PublishTargetUrl>
-    <History>True|2024-07-24T18:21:27.5783418Z||;</History>
+    <History>True|2024-08-17T11:09:37.8008510Z||;True|2024-07-25T00:21:27.5783418+06:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -22,19 +22,43 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>10/24/2017 02:15:20</publishTime>
     </File>
     <File Include="bin/FamilyMedia.dll">
-      <publishTime>07/25/2024 00:21:24</publishTime>
+      <publishTime>08/17/2024 17:09:36</publishTime>
     </File>
     <File Include="bin/FamilyMedia.pdb">
-      <publishTime>07/25/2024 00:21:24</publishTime>
+      <publishTime>08/17/2024 17:09:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.dll">
+      <publishTime>01/14/2022 08:40:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.Core.pdb">
+      <publishTime>01/14/2022 08:32:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.dll">
+      <publishTime>01/14/2022 08:40:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.SignalR.SystemWeb.pdb">
+      <publishTime>01/14/2022 08:34:16</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/13/2014 22:11:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>01/13/2014 22:11:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>01/13/2014 22:11:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>04/11/2022 19:09:46</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>03/08/2023 07:09:56</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>11/13/2012 18:19:34</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>08/08/2018 05:38:48</publishTime>
@@ -207,6 +231,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>
     </File>
+    <File Include="Content/BeforeLogin.css">
+      <publishTime>08/17/2024 17:03:40</publishTime>
+    </File>
     <File Include="Content/bootstrap-grid.css">
       <publishTime>07/23/2024 12:52:49</publishTime>
     </File>
@@ -303,8 +330,11 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Content/bootstrap.rtl.min.css.map">
       <publishTime>07/23/2024 12:52:48</publishTime>
     </File>
+    <File Include="Content/Navbar.css">
+      <publishTime>07/30/2024 11:49:57</publishTime>
+    </File>
     <File Include="Content/Site.css">
-      <publishTime>07/23/2024 12:52:45</publishTime>
+      <publishTime>08/17/2024 17:07:41</publishTime>
     </File>
     <File Include="EF/Model1.edmx.diagram">
       <publishTime>07/23/2024 13:08:27</publishTime>
@@ -369,6 +399,12 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Scripts/jquery-3.7.0.slim.min.map">
       <publishTime>07/23/2024 12:52:49</publishTime>
     </File>
+    <File Include="Scripts/jquery.signalR-2.4.3.js">
+      <publishTime>07/30/2024 19:51:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.signalR-2.4.3.min.js">
+      <publishTime>07/30/2024 19:51:53</publishTime>
+    </File>
     <File Include="Scripts/jquery.validate.js">
       <publishTime>07/23/2024 12:52:53</publishTime>
     </File>
@@ -397,7 +433,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/23/2024 13:13:50</publishTime>
     </File>
     <File Include="Views/FindFriend/Index.cshtml">
-      <publishTime>07/24/2024 14:27:47</publishTime>
+      <publishTime>08/17/2024 14:16:22</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>07/23/2024 13:14:15</publishTime>
@@ -409,13 +445,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/23/2024 13:14:15</publishTime>
     </File>
     <File Include="Views/Login/Index.cshtml">
-      <publishTime>07/23/2024 13:15:16</publishTime>
+      <publishTime>08/16/2024 18:32:53</publishTime>
     </File>
     <File Include="Views/Notification/Index.cshtml">
       <publishTime>07/23/2024 13:15:28</publishTime>
     </File>
     <File Include="Views/Post/createPost.cshtml">
-      <publishTime>07/24/2024 15:20:26</publishTime>
+      <publishTime>08/16/2024 17:51:54</publishTime>
     </File>
     <File Include="Views/Post/EditPost.cshtml">
       <publishTime>07/23/2024 13:15:39</publishTime>
@@ -424,10 +460,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/23/2024 13:15:39</publishTime>
     </File>
     <File Include="Views/Post/MyPosts.cshtml">
-      <publishTime>07/23/2024 13:15:39</publishTime>
+      <publishTime>08/17/2024 13:08:31</publishTime>
+    </File>
+    <File Include="Views/Profile/EditProfile.cshtml">
+      <publishTime>07/30/2024 23:37:55</publishTime>
     </File>
     <File Include="Views/Profile/Index.cshtml">
-      <publishTime>07/24/2024 12:10:55</publishTime>
+      <publishTime>07/30/2024 16:33:30</publishTime>
+    </File>
+    <File Include="Views/Profile/MyProfile.cshtml">
+      <publishTime>07/30/2024 23:35:10</publishTime>
+    </File>
+    <File Include="Views/Profile/Profile.css">
+      <publishTime>07/30/2024 23:38:41</publishTime>
     </File>
     <File Include="Views/Profile/ProfileNotFound.cshtml">
       <publishTime>07/23/2024 13:15:51</publishTime>
@@ -436,19 +481,19 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/23/2024 20:34:30</publishTime>
     </File>
     <File Include="Views/Registration/Index.cshtml">
-      <publishTime>07/23/2024 13:16:02</publishTime>
+      <publishTime>08/17/2024 17:08:41</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>07/23/2024 13:16:47</publishTime>
     </File>
     <File Include="Views/Shared/_AfterLoginLayout.cshtml">
-      <publishTime>07/25/2024 00:12:21</publishTime>
+      <publishTime>08/17/2024 16:15:46</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/23/2024 13:16:47</publishTime>
+      <publishTime>08/17/2024 17:01:55</publishTime>
     </File>
     <File Include="Views/User/Index.cshtml">
-      <publishTime>07/23/2024 13:16:19</publishTime>
+      <publishTime>07/30/2024 14:15:24</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>07/23/2024 12:52:45</publishTime>
@@ -457,7 +502,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>07/23/2024 12:52:45</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/25/2024 00:21:26</publishTime>
+      <publishTime>08/17/2024 17:09:37</publishTime>
     </File>
   </ItemGroup>
 </Project>

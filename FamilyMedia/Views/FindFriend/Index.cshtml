@@ -7,9 +7,7 @@
 
 ﻿@if (TempData["Msg"] != null)
 {
-    <div>
-        <span class="text-bg-info">@TempData["Msg"]</span>
-    </div>
+     <span class="text-bg-info">@TempData["Msg"]</span>
 }
 
 <h2>Friend Request</h2>
@@ -44,11 +42,14 @@
             <td class="d-inline-flex">
                 @if (Session["UserId"] != null)
                 {
+                    <div class="accept-delete">
+
+                    </div>
                     using (Html.BeginForm("Accept", "FindFriend", new { id = item.Id }, FormMethod.Post))
                     {
                         <input type="submit" value="Accept" class="btn btn-success" />
                     }
-                    <span> | </span>
+                    
                     using (Html.BeginForm("Delete", "FindFriend", new { id = item.Id }, FormMethod.Post))
                     {
                         <input type="submit" value="Delete" class="btn btn-danger" />
@@ -121,7 +122,7 @@
                     {
                         using (Html.BeginForm("AddFriend", "Profile", new { id = item.Id }, FormMethod.Post))
                         {
-                            <input type="submit" value="Add Friend" class="btn btn-primary" />
+                            <input type="submit" value="Add Friend" class="btn btn-primary add-friend-btn" />
                         }
                     }
                 }

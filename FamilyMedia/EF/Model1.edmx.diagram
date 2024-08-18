@@ -24,6 +24,8 @@
         <AssociationConnector Association="FamilyMediaModel.FK_Notification_Users" ManuallyRouted="false" />
         <AssociationConnector Association="FamilyMediaModel.FK_Posts_Users" ManuallyRouted="false" />
         <AssociationConnector Association="FamilyMediaModel.FK_Meetings_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="FamilyMediaModel.ProfilePicture" Width="1.5" PointX="3" PointY="8.125" />
+        <AssociationConnector Association="FamilyMediaModel.FK_ProfilePictures_Users" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

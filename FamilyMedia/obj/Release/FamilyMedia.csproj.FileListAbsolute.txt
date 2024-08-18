@@ -81,3 +81,16 @@ E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\obj\Release\FamilyMedia.
 E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\obj\Release\FamilyMe.A87C0D17.Up2Date
 E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\obj\Release\FamilyMedia.dll
 E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\obj\Release\FamilyMedia.pdb
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.AspNet.SignalR.Core.dll
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.Owin.dll
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.Owin.Security.dll
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Owin.dll
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.AspNet.SignalR.Core.pdb
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.AspNet.SignalR.Core.xml
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.Owin.xml
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Education\AIUB\11th semester\FamilyMedia\FamilyMedia\bin\Microsoft.Owin.Security.xml
